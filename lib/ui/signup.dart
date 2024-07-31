@@ -22,7 +22,10 @@ class SignUp extends StatelessWidget {
           const SizedBox(
             height: 56,
           ),
-          _buildButtomSplash(),
+          _buildButtomGoogle(),
+          // SizedBox(height: 12),
+          // _buildButtomApple(),
+
         ],
       ),
     );
@@ -70,7 +73,7 @@ class SignUp extends StatelessWidget {
     );
   }
 
-  Widget _buildButtomSplash() {
+  Widget _buildButtomGoogle() {
     return Padding(
       padding: const EdgeInsets.all(48),
       child: SizedBox(
@@ -110,5 +113,51 @@ class SignUp extends StatelessWidget {
       ),
     );
   }
+  //
+
+  // Widget _buildButtomApple(){
+  //   return Column(
+  //     children: [
+  //       Padding(
+  //         padding: const EdgeInsets.all(48),
+  //         child: SizedBox(
+  //           width: double.infinity,
+  //           child: ElevatedButton(
+  //             onPressed: () {},
+  //             style: ElevatedButton.styleFrom(
+  //                 backgroundColor: const Color(0xFFFFFFFF),
+  //                 shape: RoundedRectangleBorder(
+  //                     borderRadius: BorderRadius.circular(4),
+  //                     side: const BorderSide(
+  //                       color: Color(0xFFBDBDBD),
+  //                     ))),
+  //             child: Row(
+  //               mainAxisAlignment: MainAxisAlignment.center,
+  //               crossAxisAlignment: CrossAxisAlignment.center,
+  //               children: [
+  //                 Image.asset(
+  //                   "assets/images/apple.png",
+  //                   width: 24,
+  //                   height: 24,
+  //                   fit: BoxFit.contain,
+  //                 ),
+  //                 Container(
+  //                   margin: const EdgeInsets.only(left: 10),
+  //                   child: const Text(
+  //                     "Sign up with Apple",
+  //                     style: TextStyle(
+  //                       fontSize: 14,
+  //                       color: Color(0xFF424242),
+  //                     ),
+  //                   ),
+  //                 ),
+  //               ],
+  //             ),
+  //           ),
+  //         ),
+  //       ),
+  //     ],
+  //   );
+  // }
 }
 // }
